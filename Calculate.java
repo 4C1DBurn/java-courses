@@ -1,5 +1,24 @@
 public class Calculate {
-	public static void main(String[] arg) {
-		System.out.println("Calculate...");
+
+	private int result;
+
+	public void add(int ... params){
+		for(Integer param : params){
+			this.result += param;
 	}
-}
+     }
+
+
+	
+	public int getResult(){
+		return this.result;
+
+	}
+
+	public void cleanResult(){
+		this.result = 0;
+	}	
+
+
+
+}	
